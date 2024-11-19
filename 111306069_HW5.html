@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Layout</title>
+    <style>
+        body {
+            background-color: #eeede1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        .main-container {
+            width: 900px;
+            height: 100%;
+            display: flex;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: rgb(169, 108, 168);
+        }
+        .left-panel, .right-panel {
+            padding: 30px;
+            width: 40%;
+            height: 100%;
+        }
+        .left-panel {
+            height: 90%;
+            width: 330px;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .photo-panel {
+            width: 200px;
+            height: 300px;
+            background-image: url('索隆.png');
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .text-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+        }
+        .text-content p {
+            margin: 10px 0;
+        }
+        .text-content img {
+            width: 200px;
+        }
+        .right-panel {
+            width: 540px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .section {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .section h2 {
+            margin: 0;
+        }
+        .education .entry {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+        }
+        .homework-list a {
+            text-decoration: none;
+            color: #aec0d3;
+            transition: color 0.3s;
+        }
+        .homework-list a:hover {
+            color: #798999;
+        }
+        .favorite-music {
+            display: 90px;
+            gap: 10px;
+            justify-content: center;
+        }
+        .favorite-music img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+        .note {
+            font-size: 0.8rem;
+            color: #c4e7c5;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-panel">
+            <div class="photo-panel"></div>
+            <div class="text-content">
+                <div>
+                    <h2>GEORGE</h2>
+                    <h3>About Me</h3>
+                    <p>Hi! I am a student at NCCU MIS. I like to exolore technology and listen to music.</p>
+                </div>
+                <div>
+                    <h3>Contact Info</h3>
+                    <p>Email: q26221922@gmail.com</p>
+                    <p>Phone: 0979755911</p>
+                </div>
+                <img src="政大校徽.png" alt="NCCU Icon"> <!-- Relative path -->
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="section education">
+                <h2>Education</h2>
+                <div class="entry">
+                    <span class="year">2021</span>
+                    <span class="description">師大附中</span>
+                </div>
+                <div class="entry">
+                    <span class="year">Now</span>
+                    <span class="description">NCCU MIS</span>
+                </div>
+            </div>
+            <div class="section homework-list">
+                <h2>Homework List</h2>
+                <ul>
+                    <li><a href="https://github.com/georgelin1108/111306069HW1.2" target="_blank">Homework 1</a></li>
+                    <li><a href="https://github.com/georgelin1108/111306069_HW2" target="_blank">Homework 2</a></li>
+                    <li><a href="https://github.com/georgelin1108/111306069HW4" target="_blank">Homework 4</a></li>
+                </ul>
+            </div>
+            <div class="section favorite-music">
+                <h2>Favorite Music</h2>
+                <div>
+                    <a href="https://www.youtube.com/watch?v=oZpYEEcvu5I" target="_blank">
+                        <img src="晚餐歌.jpg" alt="Album Cover 1"> <!-- Relative path -->
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.youtube.com/watch?v=Bbp9ZaJD_eA" target="_blank">
+                        <img src="七里香.jpg" alt="Album Cover 2"> <!-- Relative path -->
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.youtube.com/watch?v=dw96CkP9Rhw" target="_blank">
+                        <img src="演說家.jpg" alt="Album Cover 3"> <!-- Relative path -->
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.youtube.com/watch?v=qpr6-Xg4pRI" target="_blank">
+                        <img src="honest.jpg" alt="Album Cover 4"> <!-- Relative path -->
+                    </a>
+                </div>
+            </div>
+            <div class="note">
+                You can listen the songs and give me some feedback.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
